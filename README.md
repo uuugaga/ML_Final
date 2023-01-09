@@ -20,14 +20,15 @@ Using .ipynb
 
 #### Model Structure:
 
+```
 class NeuralNet(nn.Module):
-def **init**(self):
-super(NeuralNet, self).**init**()
-self.fc1 = nn.Linear(23, 32)  
- self.fc2 = nn.Linear(32, 64)
-self.fc3 = nn.Linear(64, 1)
-self.leaky_relu = nn.LeakyReLU(0.1)
-self.sigmoid = nn.Sigmoid()
+    def __init__(self):
+        super(NeuralNet, self).__init__()
+        self.fc1 = nn.Linear(23, 32)
+        self.fc2 = nn.Linear(32, 64)
+        self.fc3 = nn.Linear(64, 1)
+        self.leaky_relu = nn.LeakyReLU(0.1)
+        self.sigmoid = nn.Sigmoid()
 
     def forward(self, x):
         out = self.fc1(x)
@@ -37,6 +38,7 @@ self.sigmoid = nn.Sigmoid()
         out = self.fc3(out)
         out = self.sigmoid(out)
         return out
+```
 
 ### 3. Evaluation code
 
