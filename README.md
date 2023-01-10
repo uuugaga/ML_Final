@@ -9,7 +9,7 @@ Using .ipynb
 
 ### 2. Training code
 
-執行 109550181_Fianl_train 即可
+執行 109550181_Final_train 即可
 
 #### Hyperparameters :
 
@@ -75,7 +75,7 @@ Private score ->**0.59226**
 
 照理說可以直接 git clone 整個專案，直接跑 Inference，也可以用 colab。
 
-在 colab 上開啟 109550181_Fianl_inference.ipynb，用 git clone 把整個專案載下來，並把路徑移到專案的資料夾，就可以執行了。
+在 colab 上開啟 109550181_Final_inference.ipynb，用 git clone 把整個專案載下來，並把路徑移到專案的資料夾，就可以執行了。
 
 以下的 code 為上述方法的參考範例
 
